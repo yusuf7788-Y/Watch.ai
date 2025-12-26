@@ -1,0 +1,30 @@
+{
+    "name": "watch-ai-root",
+    "version": "1.0.0",
+    "main": "electron/main.js",
+    "scripts": {
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "electron": "concurrently \"npm run server\" \"npm run client\" \"wait-on http://localhost:5173 && electron .\"",
+        "server": "cd server && node index.js",
+        "client": "cd client && npm run dev",
+        "dist": "electron-builder"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "electron": "^39.2.7",
+        "electron-builder": "^26.0.12",
+        "wait-on": "^9.0.3"
+    },
+    "build": {
+        "appId": "com.watchai.app",
+        "productName": "Watch.ai",
+        "files": [
+            "electron/**/*",
+            "server/**/*",
+            "client/dist/**/*"
+        ],
+        "directories": {
+            "output": "dist"
+        }
+    }
+}

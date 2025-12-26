@@ -1,0 +1,21 @@
+# General
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+secrets.json
+
+# VS Code
+.vscode/
+
+# Build outputs
+out/
+dist/
+*.tsbuildinfo
+
+# Project specific
+vscode/out/
+server/node_modules/
+client/node_modules/
+vscode/extensions/watch-ai/out/
