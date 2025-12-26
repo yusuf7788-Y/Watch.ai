@@ -1,0 +1,82 @@
+{
+    "name": "Watch.ai Midnight",
+    "type": "dark",
+    "colors": {
+        "editor.background": "#0a0a0c",
+        "editor.foreground": "#e0e0e0",
+        "activityBar.background": "#0a0a0c",
+        "activityBar.foreground": "#ffffff",
+        "sideBar.background": "#0d0d0f",
+        "sideBar.border": "#1a1a1c",
+        "editorGroupHeader.tabsBackground": "#0a0a0c",
+        "tab.activeBackground": "#16161a",
+        "tab.activeBorder": "#2e7bff",
+        "tab.inactiveBackground": "#0a0a0c",
+        "statusBar.background": "#0a0a0c",
+        "statusBar.foreground": "#808080",
+        "titleBar.activeBackground": "#0a0a0c",
+        "titleBar.activeForeground": "#ffffff",
+        "button.background": "#2e7bff",
+        "list.activeSelectionBackground": "#1a1a1c",
+        "list.hoverBackground": "#141416",
+        "editorCursor.foreground": "#2e7bff",
+        "editor.lineHighlightBackground": "#16161a",
+        "editor.selectionBackground": "#2e7bff44",
+        "editorIndentGuide.background": "#1a1a1c",
+        "editorIndentGuide.activeBackground": "#2e7bff",
+        "breadcrumb.background": "#0a0a0c",
+        "widget.shadow": "#000000cc"
+    },
+    "tokenColors": [
+        {
+            "scope": [
+                "comment"
+            ],
+            "settings": {
+                "foreground": "#606060",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": [
+                "keyword",
+                "storage.type"
+            ],
+            "settings": {
+                "foreground": "#3a8cff"
+            }
+        },
+        {
+            "scope": [
+                "string"
+            ],
+            "settings": {
+                "foreground": "#88b7ff"
+            }
+        },
+        {
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
+                "foreground": "#c0c0c0"
+            }
+        },
+        {
+            "scope": [
+                "variable"
+            ],
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "scope": [
+                "entity.name.function"
+            ],
+            "settings": {
+                "foreground": "#50b5ff"
+            }
+        }
+    ]
+}

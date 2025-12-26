@@ -1,0 +1,61 @@
+{
+    "name": "watch-ai",
+    "displayName": "Watch AI",
+    "description": "Watch AI Agentic IDE Features",
+    "version": "5.0.0",
+    "publisher": "watch-ai",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Other"
+    ],
+    "main": "./out/extension.js",
+    "browser": "./out/extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "auxiliarybar": [
+                {
+                    "id": "watch-ai-explorer",
+                    "title": "Watch AI",
+                    "icon": "resources/logo-beyaz.png"
+                }
+            ]
+        },
+        "views": {
+            "watch-ai-explorer": [
+                {
+                    "type": "webview",
+                    "id": "watch-ai.chatView",
+                    "name": "Watch AI Chat",
+                    "icon": "logo.svg"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "watch-ai.askKat",
+                "title": "Watch AI: Sor",
+                "category": "Watch AI"
+            }
+        ],
+        "themes": [
+            {
+                "label": "Watch.ai Midnight",
+                "uiTheme": "vs-dark",
+                "path": "./themes/midnight.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^20.19.27",
+        "@types/vscode": "^1.107.0",
+        "typescript": "^5.9.3"
+    }
+}
